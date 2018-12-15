@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86FAB39421C5A91C00B2E5C8 /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FAB39321C5A91C00B2E5C8 /* PersistentController.swift */; };
+		86FAB39621C5A97D00B2E5C8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FAB39521C5A97D00B2E5C8 /* DataManager.swift */; };
 		D7E4A414F1A4DE10BAFD7803 /* Pods_In_Yerevan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48E770BCFE0A596BCBDEB88 /* Pods_In_Yerevan.framework */; };
 		F9498BBB21C54A9D0012F8BD /* OnlineChat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9498BBA21C54A9D0012F8BD /* OnlineChat.storyboard */; };
 		F9498BBD21C54AFC0012F8BD /* AllEvents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9498BBC21C54AFC0012F8BD /* AllEvents.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		1C224E1BCBDF5BDC718E8C40 /* Pods-In Yerevan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In Yerevan.release.xcconfig"; path = "Pods/Target Support Files/Pods-In Yerevan/Pods-In Yerevan.release.xcconfig"; sourceTree = "<group>"; };
+		86FAB39321C5A91C00B2E5C8 /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
+		86FAB39521C5A97D00B2E5C8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B48E770BCFE0A596BCBDEB88 /* Pods_In_Yerevan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_In_Yerevan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1E178B6543D22AD39B52B9 /* Pods-In Yerevan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In Yerevan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-In Yerevan/Pods-In Yerevan.debug.xcconfig"; sourceTree = "<group>"; };
 		F9498BBA21C54A9D0012F8BD /* OnlineChat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnlineChat.storyboard; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				F95DC6DB21BFF41B00273881 /* AppDelegate.swift */,
+				86FAB39521C5A97D00B2E5C8 /* DataManager.swift */,
 				F95DC6E221BFF41B00273881 /* In_Yerevan.xcdatamodeld */,
 				F95DC6F421BFF73300273881 /* Models */,
 				F95DC6F121BFF59900273881 /* Views */,
@@ -152,6 +157,7 @@
 		F95DC6F421BFF73300273881 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				86FAB39321C5A91C00B2E5C8 /* PersistentController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 				TargetAttributes = {
 					F95DC6D721BFF41B00273881 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -277,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F95DC6DC21BFF41B00273881 /* AppDelegate.swift in Sources */,
+				86FAB39621C5A97D00B2E5C8 /* DataManager.swift in Sources */,
+				86FAB39421C5A91C00B2E5C8 /* PersistentController.swift in Sources */,
 				F95DC6E421BFF41B00273881 /* In_Yerevan.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,15 +431,19 @@
 			baseConfigurationReference = CC1E178B6543D22AD39B52B9 /* Pods-In Yerevan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6635SAL2C;
 				INFOPLIST_FILE = "$(SRCROOT)/In Yerevan/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "InYerevan.In-Yerevan";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -440,15 +453,19 @@
 			baseConfigurationReference = 1C224E1BCBDF5BDC718E8C40 /* Pods-In Yerevan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6635SAL2C;
 				INFOPLIST_FILE = "$(SRCROOT)/In Yerevan/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "InYerevan.In-Yerevan";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
