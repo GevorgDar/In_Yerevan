@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Fm-Gh-tdk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="Cm8-Y9-dQq">
+            <objects>
+                <viewController id="0uK-48-jPL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ofZ-ca-2gH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wnE-26-jqg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="NtY-RK-kRU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xR3-g4-tTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-824" y="95"/>
+        </scene>
+        <!--AdditionalAbilities-->
+        <scene sceneID="Tbu-yY-Hid">
+            <objects>
+                <viewController id="1Fm-Gh-tdk" customClass="ControllInReserveViewController" customModule="In_Yerevan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ItQ-iD-meb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-DB-n3l">
+                                <rect key="frame" x="0.0" y="232" width="375" height="435"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ooQ-Oj-kDM">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ooQ-Oj-kDM" id="N31-rP-aan">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Fm-Gh-tdk" id="ETx-NB-q1J"/>
+                                    <outlet property="delegate" destination="1Fm-Gh-tdk" id="1gW-y5-JUb"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="acE-0Q-KGu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="232" id="pNx-A8-guF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Tcl-DB-n3l" secondAttribute="bottom" id="Aly-uN-lAs"/>
+                            <constraint firstItem="Tcl-DB-n3l" firstAttribute="leading" secondItem="fpJ-46-B2N" secondAttribute="leading" id="Owh-rt-ppn"/>
+                            <constraint firstItem="Tcl-DB-n3l" firstAttribute="trailing" secondItem="fpJ-46-B2N" secondAttribute="trailing" id="PEQ-ZX-qlL"/>
+                            <constraint firstItem="acE-0Q-KGu" firstAttribute="leading" secondItem="fpJ-46-B2N" secondAttribute="leading" id="X5p-A2-xh7"/>
+                            <constraint firstItem="acE-0Q-KGu" firstAttribute="trailing" secondItem="fpJ-46-B2N" secondAttribute="trailing" id="bF9-Da-Q6P"/>
+                            <constraint firstItem="acE-0Q-KGu" firstAttribute="top" secondItem="ItQ-iD-meb" secondAttribute="top" id="hLN-Nz-idT"/>
+                            <constraint firstItem="Tcl-DB-n3l" firstAttribute="top" secondItem="acE-0Q-KGu" secondAttribute="bottom" id="ynv-90-Lne"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fpJ-46-B2N"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="AdditionalAbilities" image="AdditionalAbilitiesRPG-Compact" id="HRl-NQ-yaU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="reserveMainImage" destination="acE-0Q-KGu" id="6Hi-En-u6e"/>
+                        <outlet property="tableView" destination="Tcl-DB-n3l" id="Fp9-B0-Eh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhP-Dt-5Wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.59999999999999" y="103.89805097451276"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AdditionalAbilitiesRPG-Compact" width="34" height="34"/>
+    </resources>
+</document>
