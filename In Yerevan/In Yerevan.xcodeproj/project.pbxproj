@@ -29,6 +29,9 @@
 		F95DC6E421BFF41B00273881 /* In_Yerevan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F95DC6E221BFF41B00273881 /* In_Yerevan.xcdatamodeld */; };
 		F95DC6E621BFF41C00273881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95DC6E521BFF41C00273881 /* Assets.xcassets */; };
 		F95DC6E921BFF41C00273881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95DC6E721BFF41C00273881 /* LaunchScreen.storyboard */; };
+		F9C29BB021C7DA8C00542FEB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C29BAF21C7DA8C00542FEB /* HomeViewController.swift */; };
+		F9C29BB221C7E97300542FEB /* LoginRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C29BB121C7E97300542FEB /* LoginRegistrationViewController.swift */; };
+		F9C29BB421C7E99100542FEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C29BB321C7E99100542FEB /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		F95DC6E521BFF41C00273881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F95DC6E821BFF41C00273881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F95DC6EA21BFF41C00273881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C29BAF21C7DA8C00542FEB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F9C29BB121C7E97300542FEB /* LoginRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegistrationViewController.swift; sourceTree = "<group>"; };
+		F9C29BB321C7E99100542FEB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,7 @@
 		F95DC6F021BFF58D00273881 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F9C29BAE21C7DA4900542FEB /* Home */,
 				86FAB39721C5B6A300B2E5C8 /* Events */,
 			);
 			path = Controllers;
@@ -222,6 +229,16 @@
 				86FAB39321C5A91C00B2E5C8 /* PersistentController.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F9C29BAE21C7DA4900542FEB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F9C29BB121C7E97300542FEB /* LoginRegistrationViewController.swift */,
+				F9C29BAF21C7DA8C00542FEB /* HomeViewController.swift */,
+				F9C29BB321C7E99100542FEB /* ProfileViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,8 +365,11 @@
 				86FAB39921C5B6D400B2E5C8 /* UpcoingEventViewController.swift in Sources */,
 				86D559F421C6F9780043EE90 /* EventTableViewCell.swift in Sources */,
 				86D559F821C71CBD0043EE90 /* EventViewController.swift in Sources */,
+				F9C29BB221C7E97300542FEB /* LoginRegistrationViewController.swift in Sources */,
 				F95DC6DC21BFF41B00273881 /* AppDelegate.swift in Sources */,
 				86FAB39621C5A97D00B2E5C8 /* DataManager.swift in Sources */,
+				F9C29BB021C7DA8C00542FEB /* HomeViewController.swift in Sources */,
+				F9C29BB421C7E99100542FEB /* ProfileViewController.swift in Sources */,
 				86C198D521C69A10004A2F79 /* EventCategoryCollectionViewCell.swift in Sources */,
 				86FAB39421C5A91C00B2E5C8 /* PersistentController.swift in Sources */,
 				86FAB39F21C5BA7600B2E5C8 /* GradientView.swift in Sources */,
