@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70EF50E221C806E5002E7786 /* ControllInReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EF50E121C806E5002E7786 /* ControllInReserveViewController.swift */; };
+		70EF510421C8CF51002E7786 /* ReserveTopHotelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EF510321C8CF51002E7786 /* ReserveTopHotelCollectionViewCell.swift */; };
+		70EF510821C90214002E7786 /* ReserveCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EF510721C90214002E7786 /* ReserveCategoryTableViewCell.swift */; };
+		70EF510B21C907CE002E7786 /* TableViewCellWithCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EF510A21C907CE002E7786 /* TableViewCellWithCollectionView.swift */; };
+		70EF510D21C90932002E7786 /* TopRestourantsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EF510C21C90932002E7786 /* TopRestourantsCollectionViewCell.swift */; };
 		8614ACDF21C6C717002ACC31 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8614ACDE21C6C717002ACC31 /* EventsViewController.swift */; };
 		86C198D221C698AE004A2F79 /* EventCategoiresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C198D121C698AE004A2F79 /* EventCategoiresViewController.swift */; };
 		86C198D521C69A10004A2F79 /* EventCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C198D421C69A10004A2F79 /* EventCategoryCollectionViewCell.swift */; };
@@ -33,6 +38,11 @@
 
 /* Begin PBXFileReference section */
 		1C224E1BCBDF5BDC718E8C40 /* Pods-In Yerevan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In Yerevan.release.xcconfig"; path = "Pods/Target Support Files/Pods-In Yerevan/Pods-In Yerevan.release.xcconfig"; sourceTree = "<group>"; };
+		70EF50E121C806E5002E7786 /* ControllInReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllInReserveViewController.swift; sourceTree = "<group>"; };
+		70EF510321C8CF51002E7786 /* ReserveTopHotelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveTopHotelCollectionViewCell.swift; sourceTree = "<group>"; };
+		70EF510721C90214002E7786 /* ReserveCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		70EF510A21C907CE002E7786 /* TableViewCellWithCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellWithCollectionView.swift; sourceTree = "<group>"; };
+		70EF510C21C90932002E7786 /* TopRestourantsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRestourantsCollectionViewCell.swift; sourceTree = "<group>"; };
 		8614ACDE21C6C717002ACC31 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		86C198D121C698AE004A2F79 /* EventCategoiresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategoiresViewController.swift; sourceTree = "<group>"; };
 		86C198D421C69A10004A2F79 /* EventCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -79,6 +89,50 @@
 				1C224E1BCBDF5BDC718E8C40 /* Pods-In Yerevan.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		705413EA21C7FBA9003A3DF5 /* Reserve */ = {
+			isa = PBXGroup;
+			children = (
+				70EF50E121C806E5002E7786 /* ControllInReserveViewController.swift */,
+				70EF50ED21C83C10002E7786 /* CollectionView Cells */,
+				70EF50E421C80A99002E7786 /* TableView Cells */,
+			);
+			path = Reserve;
+			sourceTree = "<group>";
+		};
+		70EF50E321C80982002E7786 /* Reserve.storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F9498BC121C54CE80012F8BD /* AdditionalAbilities.storyboard */,
+			);
+			path = Reserve.storyboard;
+			sourceTree = "<group>";
+		};
+		70EF50E421C80A99002E7786 /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		70EF50ED21C83C10002E7786 /* CollectionView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				70EF510921C907A2002E7786 /* asd */,
+				70EF510721C90214002E7786 /* ReserveCategoryTableViewCell.swift */,
+				70EF510321C8CF51002E7786 /* ReserveTopHotelCollectionViewCell.swift */,
+			);
+			path = "CollectionView Cells";
+			sourceTree = "<group>";
+		};
+		70EF510921C907A2002E7786 /* asd */ = {
+			isa = PBXGroup;
+			children = (
+				70EF510A21C907CE002E7786 /* TableViewCellWithCollectionView.swift */,
+				70EF510C21C90932002E7786 /* TopRestourantsCollectionViewCell.swift */,
+			);
+			path = asd;
 			sourceTree = "<group>";
 		};
 		86C198D321C699D9004A2F79 /* CollectionView Cells */ = {
@@ -142,7 +196,7 @@
 				F95DC6DF21BFF41B00273881 /* Main.storyboard */,
 				F9498BBE21C54B120012F8BD /* Home.storyboard */,
 				F9498BBC21C54AFC0012F8BD /* AllEvents.storyboard */,
-				F9498BC121C54CE80012F8BD /* AdditionalAbilities.storyboard */,
+				70EF50E321C80982002E7786 /* Reserve.storyboard */,
 				F9498BBA21C54A9D0012F8BD /* OnlineChat.storyboard */,
 			);
 			path = Storyboards;
@@ -186,6 +240,7 @@
 		F95DC6F021BFF58D00273881 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				705413EA21C7FBA9003A3DF5 /* Reserve */,
 				86FAB39721C5B6A300B2E5C8 /* Events */,
 			);
 			path = Controllers;
@@ -345,14 +400,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EF510821C90214002E7786 /* ReserveCategoryTableViewCell.swift in Sources */,
 				86FAB39921C5B6D400B2E5C8 /* UpcoingEventViewController.swift in Sources */,
 				86D559F421C6F9780043EE90 /* EventTableViewCell.swift in Sources */,
+				70EF50E221C806E5002E7786 /* ControllInReserveViewController.swift in Sources */,
 				86D559F821C71CBD0043EE90 /* EventViewController.swift in Sources */,
+				70EF510421C8CF51002E7786 /* ReserveTopHotelCollectionViewCell.swift in Sources */,
 				F95DC6DC21BFF41B00273881 /* AppDelegate.swift in Sources */,
 				86FAB39621C5A97D00B2E5C8 /* DataManager.swift in Sources */,
 				86C198D521C69A10004A2F79 /* EventCategoryCollectionViewCell.swift in Sources */,
+				70EF510D21C90932002E7786 /* TopRestourantsCollectionViewCell.swift in Sources */,
 				86FAB39421C5A91C00B2E5C8 /* PersistentController.swift in Sources */,
 				86FAB39F21C5BA7600B2E5C8 /* GradientView.swift in Sources */,
+				70EF510B21C907CE002E7786 /* TableViewCellWithCollectionView.swift in Sources */,
 				86C198D221C698AE004A2F79 /* EventCategoiresViewController.swift in Sources */,
 				86D559F621C70CC90043EE90 /* Date+String.swift in Sources */,
 				86D559FA21C71E1E0043EE90 /* EventPictureCollectionViewCell.swift in Sources */,
@@ -505,7 +565,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A6635SAL2C;
+				DEVELOPMENT_TEAM = 52H3X6C7BT;
 				INFOPLIST_FILE = "$(SRCROOT)/In Yerevan/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -527,7 +587,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A6635SAL2C;
+				DEVELOPMENT_TEAM = 52H3X6C7BT;
 				INFOPLIST_FILE = "$(SRCROOT)/In Yerevan/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

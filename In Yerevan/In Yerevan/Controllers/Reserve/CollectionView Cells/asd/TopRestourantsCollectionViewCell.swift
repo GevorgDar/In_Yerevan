@@ -9,5 +9,11 @@
 import UIKit
 
 class TopRestourantsCollectionViewCell: UICollectionViewCell {
+    static let id = "TopRestourantsCollectionViewCell"
     
+    @IBOutlet weak var imLabelna: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // code
+    }
 }
