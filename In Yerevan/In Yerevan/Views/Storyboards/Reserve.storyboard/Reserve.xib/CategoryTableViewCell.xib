@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="CategoryTableViewCell" customModule="In_Yerevan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="167.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGT-dk-6fw">
+                        <rect key="frame" x="216" y="0.0" width="107" height="83.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Home">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vot-Od-3hl">
+                        <rect key="frame" x="108" y="84.5" width="107" height="72.5"/>
+                        <state key="normal" title="Cafe">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZG-ZG-pwT">
+                        <rect key="frame" x="0.0" y="0.0" width="107" height="83.5"/>
+                        <state key="normal" title="Hotel">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNz-80-Btr">
+                        <rect key="frame" x="0.0" y="84.5" width="107" height="83"/>
+                        <state key="normal" title="Restaurants">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Op-Df-u78">
+                        <rect key="frame" x="108" y="0.0" width="107" height="73"/>
+                        <state key="normal" title="Hostel">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srz-HP-gc6">
+                        <rect key="frame" x="216" y="84.5" width="107" height="83"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Tab">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GZG-ZG-pwT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3Y0-K5-2R8"/>
+                    <constraint firstItem="vot-Od-3hl" firstAttribute="width" secondItem="Srz-HP-gc6" secondAttribute="width" id="Kcr-nh-t6Y"/>
+                    <constraint firstItem="fGT-dk-6fw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KuG-NA-D3G"/>
+                    <constraint firstItem="fGT-dk-6fw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NjM-Ip-jbd"/>
+                    <constraint firstAttribute="bottom" secondItem="Srz-HP-gc6" secondAttribute="bottom" id="ODi-1D-X7Q"/>
+                    <constraint firstItem="fGT-dk-6fw" firstAttribute="leading" secondItem="9Op-Df-u78" secondAttribute="trailing" constant="1" id="PdS-QJ-Qc8"/>
+                    <constraint firstItem="9Op-Df-u78" firstAttribute="height" secondItem="vot-Od-3hl" secondAttribute="height" id="UCX-Rw-mv1"/>
+                    <constraint firstAttribute="trailing" secondItem="fGT-dk-6fw" secondAttribute="trailing" id="Vfx-vH-nkb"/>
+                    <constraint firstItem="fGT-dk-6fw" firstAttribute="height" secondItem="Srz-HP-gc6" secondAttribute="height" id="Vwd-qb-q1A"/>
+                    <constraint firstItem="vot-Od-3hl" firstAttribute="top" secondItem="fGT-dk-6fw" secondAttribute="bottom" constant="1" id="WTv-DO-caI"/>
+                    <constraint firstAttribute="bottom" secondItem="jNz-80-Btr" secondAttribute="bottom" id="X1j-fr-up3"/>
+                    <constraint firstItem="GZG-ZG-pwT" firstAttribute="height" secondItem="jNz-80-Btr" secondAttribute="height" id="Xok-Dp-4XF"/>
+                    <constraint firstItem="GZG-ZG-pwT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="a3Y-6p-oEh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vot-Od-3hl" secondAttribute="bottom" id="fE4-gI-eXd"/>
+                    <constraint firstItem="Srz-HP-gc6" firstAttribute="leading" secondItem="vot-Od-3hl" secondAttribute="trailing" constant="1" id="ggI-bx-tgr"/>
+                    <constraint firstItem="jNz-80-Btr" firstAttribute="top" secondItem="GZG-ZG-pwT" secondAttribute="bottom" constant="1" id="ka9-lz-ebR"/>
+                    <constraint firstItem="9Op-Df-u78" firstAttribute="leading" secondItem="GZG-ZG-pwT" secondAttribute="trailing" constant="1" id="ktX-aa-DXD"/>
+                    <constraint firstItem="Srz-HP-gc6" firstAttribute="top" secondItem="fGT-dk-6fw" secondAttribute="bottom" constant="1" id="lf0-Jn-5sR"/>
+                    <constraint firstItem="9Op-Df-u78" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mbO-gi-7Qe"/>
+                    <constraint firstItem="vot-Od-3hl" firstAttribute="leading" secondItem="jNz-80-Btr" secondAttribute="trailing" constant="1" id="om5-o4-dqi"/>
+                    <constraint firstItem="9Op-Df-u78" firstAttribute="width" secondItem="fGT-dk-6fw" secondAttribute="width" id="qQj-ct-evL"/>
+                    <constraint firstItem="jNz-80-Btr" firstAttribute="width" secondItem="vot-Od-3hl" secondAttribute="width" id="stT-T7-Pt6"/>
+                    <constraint firstItem="jNz-80-Btr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wJe-i2-7B7"/>
+                    <constraint firstItem="GZG-ZG-pwT" firstAttribute="width" secondItem="9Op-Df-u78" secondAttribute="width" id="y7M-rc-di6"/>
+                    <constraint firstAttribute="trailing" secondItem="Srz-HP-gc6" secondAttribute="trailing" id="ymx-xH-DME"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="138.40000000000001" y="203.29835082458771"/>
+        </tableViewCell>
+    </objects>
+</document>
